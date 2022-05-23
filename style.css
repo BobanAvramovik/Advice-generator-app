@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(217, 19%, 24%);
+  padding: 3rem;
+  max-width: 144rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.heading {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+#quote {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 3rem;
+}
+
+.img-pattern-desktop {
+  margin-bottom: 3rem;
+}
+
+.img-pattern-mobile {
+  display: none;
+}
+
+.dice-box {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 0 rgb(0, 0, 0);
+  transition: all 400ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dice-box:hover {
+  background-color: hsl(152, 87%, 48%);
+  box-shadow: 0 0 2rem hsl(150, 100%, 66%);
+}
+
+.dice-box img {
+  width: 2rem;
+  background-color: hsl(150, 100%, 66%);
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 2rem;
+  }
+  .heading {
+    margin-bottom: 1rem;
+  }
+
+  #quote {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heading {
+    font-size: 0.8rem;
+  }
+
+  .img-pattern-desktop {
+    display: none;
+  }
+
+  .img-pattern-mobile {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .dice-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 88%;
+  }
+
+  .dice-box img {
+    width: 1.3rem;
+  }
+}
